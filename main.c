@@ -6,7 +6,7 @@
 /*   By: clesaffr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 21:01:26 by clesaffr          #+#    #+#             */
-/*   Updated: 2023/04/13 21:01:55 by clesaffr         ###   ########.fr       */
+/*   Updated: 2023/04/13 21:16:37 by clesaffr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,26 @@
 
 void	parsing_rd_line(char *rd_line, t_cmd *cmd)
 {
+	int	i;
+	t_cmd	*tmp;
 	(void)cmd;
+
 	printf("RD/ %s\n", rd_line);
+	while (rd_line[i])
+	{
+		if (rd_line[i] == '|')
+		{
+			tmp =  (t_cmd *)malloc(sizeof(t_cmd));
+			cmd->next = tmp;
+			cmd = cmd->next;
+			i++;
+		}
+		if (rd_line[i] == ' ')
+		{
+			
+		}
+		i++;
+	}
 }
 
 void	free_dt(char **av)
