@@ -6,7 +6,7 @@
 /*   By: clesaffr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 21:00:22 by clesaffr          #+#    #+#             */
-/*   Updated: 2023/04/13 21:01:10 by clesaffr         ###   ########.fr       */
+/*   Updated: 2023/04/20 19:53:22 by clesaffr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <signal.h>
-# include <readline/readline.h>
-# include <readline/history.h>
 
 typedef struct s_cmd	t_cmd;
 
